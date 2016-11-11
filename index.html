@@ -1,19 +1,205 @@
 <!doctype html>
 <html>
   <head>
-    <title>Brainstation Project</title>
+    <title>Bootstrap Starter Kit</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <h1>Brainstation Project</h1>
-      </div>
-    </div>
-    
+    <link rel="stylesheet" type="text/css" href="css/hero-slider.css"/>
+    <link rel="stylesheet" type="text/css" href="css/swipebox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hero-slider.js"></script>
+  </head>
+  <body>
+      <!-- 
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12"></div>
+        </div>
+      </div>
+      -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="home">
+              <!-- <img src="img/hero-image.png"/> -->
+                <section class="cd-hero">
+                  <ul class="cd-hero-slider">
+                    <li class="selected">
+                      <div class="cd-full-width">
+                        <h2>Hero slider</h2>
+                        <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                        <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                      </div> <!-- .cd-full-width -->
+                    </li>
+
+                    <li>
+                      <div class="cd-half-width">
+                        <h2>Slide title here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+                        <a href="#0" class="cd-btn">Start</a>
+                        <a href="#0" class="cd-btn secondary">Learn More</a>
+                      </div> <!-- .cd-half-width -->
+
+                      <div class="cd-half-width cd-img-container">
+                        <img src="assets/tech-1.jpg" alt="tech 1">
+                      </div> <!-- .cd-half-width.cd-img-container -->
+                    </li>
+
+                    <li>
+                      <div class="cd-half-width cd-img-container">
+                        <img src="assets/tech-2.jpg" alt="tech 2">
+                      </div> <!-- .cd-half-width.cd-img-container -->
+
+                      <div class="cd-half-width">
+                        <h2>Slide title here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</p>
+                        <a href="#0" class="cd-btn">Start</a>
+                        <a href="#0" class="cd-btn secondary">Learn More</a>
+                      </div> <!-- .cd-half-width -->
+                      
+                    </li>
+
+                    <li class="cd-bg-video">
+                      <div class="cd-full-width">
+                        <h2>Slide title here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                        <a href="#0" class="cd-btn">Learn more</a>
+                      </div> <!-- .cd-full-width -->
+
+                      <div class="cd-bg-video-wrapper" data-video="assets/video/video">
+                        <!-- video element will be loaded using jQuery -->
+                      </div> <!-- .cd-bg-video-wrapper -->
+                    </li>
+
+                    <li>
+                      <div class="cd-full-width">
+                        <h2>Slide title here</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                        <a href="#0" class="cd-btn">Start</a>
+                        <a href="#0" class="cd-btn secondary">Learn More</a>
+                      </div> <!-- .cd-full-width -->
+                    </li>
+                  </ul> <!-- .cd-hero-slider -->
+
+                  <div class="cd-slider-nav">
+                    <nav>
+                      <span class="cd-marker item-1"></span>
+                      
+                      <ul>
+                        <li class="selected"><a href="#0">Intro</a></li>
+                        <li><a href="#0">Tech 1</a></li>
+                        <li><a href="#0">Tech 2</a></li>
+                        <li><a href="#0">Video</a></li>
+                        <li><a href="#0">Image</a></li>
+                      </ul>
+                    </nav> 
+                  </div> <!-- .cd-slider-nav -->
+                </section> <!-- .cd-hero -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <!--THIS IS THE NAVIGATION -->
+        <div class="row">
+          <div class="container-fluid">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#box-container">Gallery</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="about">
+              <h3>About</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+              <p>
+                Istam voluptatem perpetuam quis potest praestare sapienti? Dulce amarum, leve asperum, prope longe, stare movere, quadratum rotundum. Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Et quod est munus, quod opus sapientiae? Quae cum dixisset paulumque institisset, Quid est? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+              <p>
+                Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Non est ista, inquam, Piso, magna dissensio. In schola desinis. Oratio me istius philosophi non offendit; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="services">
+              <h3>Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+              <p>
+                Istam voluptatem perpetuam quis potest praestare sapienti? Dulce amarum, leve asperum, prope longe, stare movere, quadratum rotundum. Cur tantas regiones barbarorum pedibus obiit, tot maria transmisit? Et quod est munus, quod opus sapientiae? Quae cum dixisset paulumque institisset, Quid est? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+              <p>
+                Tum ille: Tu autem cum ipse tantum librorum habeas, quos hic tandem requiris? Non est ista, inquam, Piso, magna dissensio. In schola desinis. Oratio me istius philosophi non offendit; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hoc est non dividere, sed frangere. Sapiens autem semper beatus est et est aliquando in dolore; Sin aliud quid voles, postea. Non dolere, inquam, istud quam vim habeat postea videro; Quid enim me prohiberet Epicureum esse, si probarem, quae ille diceret? Duo Reges: constructio interrete.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" id="image-gallery">
+            <h3>Gallery</h3>
+            <p></p>
+            <div id="box-container">
+            <ul class="col-lg-6">
+              <li class="box">
+                <a href="http://swipebox.csag.co/images/image-1.jpg" class="swipebox" title="Fog">
+                  <img src="http://swipebox.csag.co/images/image-1.jpg" alt="image">
+                </a>
+              </li>
+              <li class="box">
+                <a href="http://swipebox.csag.co/images/image-2.jpg" class="swipebox" title="City">
+                  <img src="http://swipebox.csag.co/images/image-2.jpg" alt="image">
+                </a>
+              </li>
+            </ul>
+            <ul class="col-lg-6">
+              <li class="box">
+                <a href="http://swipebox.csag.co/images/image-3.jpg" class="swipebox" title="Street">
+                  <img src="http://swipebox.csag.co/images/image-3.jpg" alt="image">
+                </a>
+              </li>
+              <li class="box">
+                <a href="http://swipebox.csag.co/images/image-4.jpg" class="swipebox" title="Mustache Guy">
+                  <img src="http://swipebox.csag.co/images/image-4.jpg" alt="image">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hero-slider.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
