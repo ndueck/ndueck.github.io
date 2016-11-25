@@ -1,3 +1,300 @@
-img {
+@font-face {
+  font-family: 'Okomito-medium';
+  src: url('../fonts/Okomito-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Okomito-bold';
+  src: url('../fonts/Okomito-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Okomito-regular';
+  src: url('../fonts/Okomito-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Okomito-light';
+  src: url('../fonts/Okomito-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Okomito-light-italic';
+  src: url('../fonts/Okomito-LightItalic.woff') format('woff');
+}
+
+img.logo {
+	height: 60px;
+}
+
+h1 {
+	font-family: 'Okomito-bold', helvetica, arial, sans-serif;
+	font-size: 120px;
+	color: #000;
+}
+
+ul {
+	list-style: none;
+	text-align: left;
+}
+
+ul li {
+	margin-top: 15px;
+}
+
+ul li a {
+	font-family: 'Okomito-light', helvetica, arial sans-serif;
+	font-size: 18px;
+}
+
+.lulu-detail h1, .about-detail h1 {
+	font-family: 'Okomito-regular' helvetica, arial, sans-serif;
+	font-size: 80px;
+	color: #000;
+}
+
+/*.about-detail h1 {
+}*/
+
+.container-fluid.main-content {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(10deg, #7EC2D1, #A8FBE3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(10deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(10deg, #7EC2D1, #A8FBE3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(10deg, #7EC2D1, #A8FBE3); /* Standard syntax (must be last) */
+    background-repeat: no-repeat;
+    /*min-height: 100%;*/
+    min-height:100vh;
+}
+
+.container-fluid.footer {
+    background-color: #345054;
+    height: 150px;
+    overflow:hidden;
+}
+
+.container-fluid.footer h3 {
+    font-family: 'Okomito-regular', helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #7EC2D1;
+	font-size: 25px;
+}
+
+.container-fluid.footer img {
+	margin-bottom:0;
+}
+
+.navbar-main {
+	background: transparent;
+	border: 0;
+}
+
+.home-intro {
+	text-align: center;
+}
+
+.home-intro p {
+	font-family: 'okomito-light', helvetica, arial, sans-serif;
+	font-size: 30px;
+	margin-bottom: 45px;
+}
+
+.lulu-detail p {
+	font-family: 'okomito-light', helvetica, arial, sans-serif;
+	font-size: 24px;
+}
+
+.about-detail p {
+	font-family: 'okomito-light', helvetica, arial, sans-serif;
+	font-size: 35px;
+	text-align: left;
+}
+
+.work-sample-container {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.work-sample {
+	width: 80%;	
+	margin: 0 auto;
+}
+
+.work-sample img {
+	width: 100%; 
+	max-width: 1280px;
+	box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+img.no-shadow {
+	box-shadow: none;
+}
+
+.work-detail-container img {
 	width: 100%;
+    margin-bottom: 15px;
+}
+
+.img-large, .img-medium, .img-small, .img-xsmall {
+	display: none;
+}
+
+
+.work-sample h3 {
+	text-align: right;
+	font-family: 'Okomito-light-italic', helvetica, arial, sans-serif;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+}
+
+.work-sample.work-lululemon {
+	max-width: 1280px;
+}
+
+.work-sample.work-indochino {
+	max-width: 1280px;
+}
+
+form {
+	text-align: left;
+}
+
+
+
+
+/* LARGE DEVICES - 1200px+ */
+
+@media (min-width: 1201px) {
+
+	img.logo {
+		height: 60px;
+	}
+	.work-sample .img-large {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.img-zoom {
+		position: relative;
+		overflow: hidden;
+		box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2);
+	}
+
+	.img-zoom img {
+		max-width: 100%;
+		-moz-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.img-zoom:hover img {
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+}
+
+/* MEDIUM DEVICES - 992px – 1200px */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+	img.logo {
+		height: 60px;
+	}
+	/*.work-sample .img-large {
+		display: none;
+	}*/
+	.work-sample .img-medium {
+		display: block;
+	}
+
+	h1 {
+		font-size: 100px;
+	}
+
+	.about-detail p {
+		font-size: 30px;
+	}
+}
+
+/* SMALL DEVICES - 768px – 992px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	img.logo {
+		height: 60px;
+	}
+	/*.work-sample .img-large {
+		display: none;
+	}*/
+	.work-sample .img-small {
+		display: block;
+	}
+
+	h1 {
+		font-size: 80px;
+	}
+
+	.about-detail h1 {
+
+	}
+
+	.about-detail p {
+		font-size: 22px;
+	}
+}
+
+/* EXTRA-SMALL DEVICES - 320px – 767px */
+
+@media (max-width: 767px) {
+
+	img.logo {
+		height: 40px;
+	}
+	/*.work-sample .img-large {
+		display: none;
+	}*/
+	.work-sample .img-xsmall {
+		display: block;
+	}
+
+	h1 {
+		font-size: 80px;
+	}
+
+	.about-detail p {
+		font-size: 22px;
+	}
+
+	.about-detail img {
+		text-align: center;
+		display: none;
+	}
+}
+
+
+/*
+.navbar-collapse.in {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 480px;
+	z-index: 2;
+	background: white
+}
+*/
+
+.max-1280 {
+	max-width: 1280px;
+}
+
+.footer-padding {
+	height: 100px;
 }
