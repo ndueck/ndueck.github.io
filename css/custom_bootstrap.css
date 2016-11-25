@@ -81,6 +81,24 @@
 		box-shadow: none;
 	}
 
+	.btn {
+		height: 70px;
+		padding: 15px 30px 20px 30px;
+		font-family: 'Okomito-regular', helvetica, arial, sans-serif;
+	}
+
+	.btn-default {
+		font-size: 25px;
+		color: #000;
+		border-color: transparent;
+		border-radius: 0;
+		border-color: #fff;
+	}
+
+	.form-group {
+		margin-bottom: 50px;
+	}
+
 }
 
 /* Medium Devices - 992px – 1200px */
